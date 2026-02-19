@@ -1,5 +1,6 @@
 <p align="center">
-<img width="256" height="148" alt="eschatch_sm" src="https://github.com/user-attachments/assets/01fe229a-770c-4d94-9a2b-e73f1f99d0ae" />
+  <img width="394" height="173" alt="eschatch_sm" src="https://github.com/user-attachments/assets/b40eb05d-3de7-4982-b635-c8fb49ffb4c7" />
+
 </p>
 
 
