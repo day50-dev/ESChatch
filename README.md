@@ -1,3 +1,6 @@
+<img width="512" height="296" alt="eschatch_sm" src="https://github.com/user-attachments/assets/01fe229a-770c-4d94-9a2b-e73f1f99d0ae" />
+
+
 **ESChatch** is a new concept, generally. It shepherds your input and output as a true wrapper and logs both sides of the conversation into files. Then when you invoke the llm it will pre-empt any existing interaction, kind of like the ssh shell escape. This is what the reversed triangle input in the video is. That's invoked with a keyboard shortcut, currently `ctrl+x`.
 
 Then you type your command in and press enter. This command, plus the context of your previous input and output is then sent off to the llm and its response is wired up to the stdin of the application.
