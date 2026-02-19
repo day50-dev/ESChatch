@@ -1,6 +1,6 @@
 <p align="center">
   <img width="394" height="173" alt="eschatch_sm" src="https://github.com/user-attachments/assets/b40eb05d-3de7-4982-b635-c8fb49ffb4c7" />
-
+  <a href=https://pypi.org/project/eschatch><img src=https://badge.fury.io/py/eschatch.svg/></a>
 </p>
 
 
