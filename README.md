@@ -1,4 +1,6 @@
-<img width="512" height="296" alt="eschatch_sm" src="https://github.com/user-attachments/assets/01fe229a-770c-4d94-9a2b-e73f1f99d0ae" />
+<p align="center">
+<img width="256" height="148" alt="eschatch_sm" src="https://github.com/user-attachments/assets/01fe229a-770c-4d94-9a2b-e73f1f99d0ae" />
+</p>
 
 
 **ESChatch** is a true pty wrapper that transparently logs every byte of input/output from any terminal application (`zsh`, `vim`, `python`, SSH sessions, etc.), then lets you hit **Ctrl+X**, type a natural-language task, and have an LLM instantly generate and inject the exact keystrokes back into the running program.
