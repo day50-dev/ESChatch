@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eschatch"
+version = "0.2.0"
+description = "A true pty wrapper that transparently logs I/O and lets you invoke an LLM to inject commands into any running terminal application"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "day50.dev", email = "day50@proton.me"}
+]
+keywords = ["terminal", "pty", "llm", "shell", "cli", "copilot"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Terminals",
+    "Topic :: System :: Shells",
+]
+dependencies = [
+    "litellm>=1.0.0",
+    "toml>=0.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+eschatch = "eschatch:main"
+
+[project.urls]
+Homepage = "https://github.com/day50/ESChatch"
+Repository = "https://github.com/day50/ESChatch"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/eschatch.py",
+    "/eschatch",
+    "/README.md",
+    "/LICENSE",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I"]
