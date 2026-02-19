@@ -19,8 +19,10 @@ ANSIESCAPE = r'\033(?:\[[0-9;?]*[a-zA-Z]|][0-9]*;;.*?\\|\\)'
 strip_ansi = lambda x: re.sub(ANSIESCAPE, "", x)
 
 parser = argparse.ArgumentParser(description='shell wrap, a transparent shell wrapper')
-parser.add_argument('--method', choices=['litellm', 'simonw', 'vllm'], default='simonw', help='Method to use for LLM interaction')
-parser.add_argument('--exec', '-e', dest='exec_command', help='Command to execute')
+parser.add_argument('--method', choices=['llcat', 'simonw'], default='llcat', help='Method to use for LLM interaction')
+parser.add_argument('--host', help='host to use')
+parser.add_argument('--model', help='model to use')
+parser.add_argument('--exec', '-e', default='bash', dest='exec_command', help='Command to execute')
 args = parser.parse_args()
 
 if args.method == 'litellm':
